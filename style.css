@@ -34,7 +34,7 @@
 body{
     max-width: min(900px,) 1440px;
     font-size: 18px;
-    background: var(--clr-white);
+    background: var(--clr-neutral-pale-blue);
 }
 
 .container {
@@ -45,7 +45,7 @@ body{
     margin: 0 auto;
     margin-top: 20vh;
     border-radius: 20px;
-    background: var(--clr-neutral-pale-blue);
+    background: var(--clr-white);
 }
 
 /* result container */
