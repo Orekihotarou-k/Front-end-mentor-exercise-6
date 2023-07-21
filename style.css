@@ -34,7 +34,7 @@
 body{
     max-width: min(900px,) 1440px;
     font-size: 18px;
-    background: var(--clr-neutral-pale-blue);
+    background: var(--clr-white);
 }
 
 .container {
