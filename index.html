@@ -2,68 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Result summary component</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;800&display=swap" rel="stylesheet">
-  
-  <title>Frontend Mentor | Results summary component</title>
-
-
 </head>
 <body>
-
-  <div class="container">
-      <div class="result-column">
-        <h2>Your Result</h2>
-          <div class="result-circle">
-            <p>76</p>
-            <span>of 100</span>
-          </div>
-        <div class="test-remark">
-           <h3>Great</h3>
-          <p>You scored higher than 65% of <br> the people who have taken <br> these tests.</p>
-        </div>
-      </div>
   
-  
-        <div class="summary-column">
-            <h2>Summary</h2>   
-            <div class="summary-items">
-                <ul>
-                  <li class="reaction-icon">
-                    <img src="images/icon-reaction.svg" alt="reaction-icon">Reaction<p><b>80</b>/100</p>
-                  </li>
-
-                  <li class="memory-icon">
-                    <img src="images/icon-memory.svg" alt="reaction-icon">Memory<p><b>92</b>/100</p>
-                  </li>
-
-                  <li class="verbal-icon">
-                    <img src="images/icon-verbal.svg" alt="reaction-icon">Verbal &emsp13;<p><b>61</b>/100</p>
-                  </li>
-
-                  <li class="visual-icon">
-                    <img src="images/icon-visual.svg" alt="reaction-icon">Visual &emsp13;&emsp13;<p><b>72</b>/100</p>
-                  </li>
-                </ul>
-
-                <a href="#" class="summary-button">Continue</a>
-    
-            </div>
-    
-        </div>
-      </div>
-    </div>
-    
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Levis Bohse</a>.
-  </div>
 </body>
 </html>
+
+<main class="wrapper flex">
+  <div class="container flex">
+    <div class="result">
+      <p class="title">Your Result</p>
+
+      <div class="result-number">
+        <p class="number">76</p>
+        <p>of 100</p>
+      </div>
+
+      <p class="remark">Great</p>
+      <p class="remark-desc">You scored higher than 65% of the people who have taken these tests.
+      </p>
+    </div>
+
+    <div class="summary">
+      <p class="title">Summary</p>
+
+      <div class="summary-wrapper flex">
+        <div class="summary-item flex">
+          <p class="summary-item-text"><img src="assets/images/icon-reaction.svg" alt="">Reaction</p>
+          <p class="score">80 <span>/100</span></p>
+        </div>
+      
+
+      <div class="summary-item flex">
+        <p class="summary-item-text"><img src="assets/images/icon-memory.svg" alt="">Memory</p>
+        <p class="score">92 <span>/100</span></p>
+      </div>
+
+      <div class="summary-item flex">
+        <p class="summary-item-text"><img src="assets/images/icon-verbal.svg" alt="">Verbal</p>
+        <p class="score">61 <span>/100</span></p>
+      </div>
+
+      <div class="summary-item flex">
+        <p class="summary-item-text"><img src="assets/images/icon-visual.svg" alt="">Visual</p>
+        <p class="score">72 <span>/100</span></p>
+      </div>
+    </div>
+
+    <button class="summary-btn">Continue</button>
+  </div>
+  </div>
+</main>
